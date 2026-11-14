@@ -3,28 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dewan Gurung | Portfolio</title>
+    <title>Dewan Gurung | Digital Engineering Support</title>
+    <meta name="description" content="Dewan Gurung is a Digital Engineering Support specialist in Tokyo, focused on DX, automation, programming, and practical AI.">
+    <meta name="author" content="Dewan Gurung">
+    <meta property="og:title" content="Dewan Gurung | Digital Engineering Support">
+    <meta property="og:description" content="Tokyo-based engineer working on digital transformation, automation, and software.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/Memoji.jpg">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="preloader">
-        <h1>Dewan Gurung Portfolio</h1>
+    <div id="preloader" hidden>
+        <p>Dewan Gurung</p>
     </div>
+
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
     <div class="container">
         <header class="navigation">
-            <h1>DEWAN</h1>
+            <a class="logo" href="index.html">NAWED</a>
             <nav>
-                <button id="mobile-menu-toggle" aria-label="Toggle menu">
+                <button id="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </button>
                 <ul id="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -32,24 +41,41 @@
             </nav>
         </header>
 
-        <main>
+        <main id="main-content">
             <div class="content">
                 <div class="text-content">
-                    <p class="greeting">
-                        Hi there, I'm <strong>Dewan Gurung</strong>
-                    </p>
-                    <p>Currently, Living in Japan and I am studying Front-end development.</p>
-                    <p>I am interested in Full stack and I enjoy learning new tech things.</p>
-                    <p>I hope to improve my skills and work in the IT field in the upcoming days.</p>
+                    <p class="eyebrow">Digital Engineering Support </p>
+                    <h1 class="hero-title">Hi, I'm <strong>Dewan Gurung</strong></h1>
+                    <p class="lead">I help teams move faster with digital transformation, automation, and practical software. Currently based in Japan, working on system integration, IT tools, and AI-assisted workflows.</p>
+                    <ul class="skill-list" aria-label="Core skills">
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>HTML / CSS</li>
+                        <li>Automation &amp; AI</li>
+                    </ul>
+                    <div class="hero-actions">
+                        <a href="projects.html" class="button-primary">View projects</a>
+                        <a href="contact.html" class="button-secondary">Get in touch</a>
+                    </div>
                 </div>
                 <div class="image-content">
-                    <img src="images/Memoji.jpg alt="Dewan Gurung Memoji" class="memoji">
+                    <figure class="portrait">
+                        <img src="images/image.jpg" alt="Illustrated portrait of Dewan Gurung" class="memoji" width="400" height="400">
+                        <p class="speech-bubble" id="speech-bubble" aria-live="polite">こんにちは!</p>
+                    </figure>
                 </div>
             </div>
         </main>
 
         <footer>
-            <p id="copyright">&copy; 2026 Dewan Gurung All rights reserved.</p>
+            <div class="footer-links">
+                <a href="mailto:Dewangurung34g@icloud.com">Email</a>
+                <a href="https://github.com/nawedGrg" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://x.com/dewangurung_" target="_blank" rel="noopener noreferrer">X</a>
+            </div>
+            <p id="copyright">&copy; <span data-year>2026</span> Dewan Gurung. All rights reserved.</p>
         </footer>
     </div>
 

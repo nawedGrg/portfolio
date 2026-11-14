@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Dewan Gurung</title>
+    <meta name="description" content="Contact Dewan Gurung in Tokyo for work, collaboration, or questions.">
+    <meta name="author" content="Dewan Gurung">
+    <meta property="og:title" content="Contact | Dewan Gurung">
+    <meta property="og:description" content="Email, phone, and a contact form for Dewan Gurung.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/Memoji.jpg">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
     <div class="container">
         <header class="navigation">
-            <h1>DEWAN</h1>
+            <a class="logo" href="index.html">NAWED</a>
             <nav>
-                <button id="mobile-menu-toggle" aria-label="Toggle menu">
+                <button id="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -23,42 +32,55 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
-        <main>
+        <main id="main-content">
             <div class="contact-page">
                 <h1 class="section-title">Contact</h1>
+                <p class="projects-subtitle">For work, collaboration, or questions.</p>
 
                 <div class="contact-container">
                     <div class="contact-info">
-                        <p>For any inquiries ?</p>
-                        <p><strong>Email :</strong> <a href="mailto:Dewangurung34g@icloud.com">Dewangurung34g@icloud.com</a></p>
-                        <p><strong>Phone :</strong> <a href="tel:+8108090035855">(+81)080-9003-5855</a></p>
-                        <p><strong>Location :</strong> Tokyo, Japan</p>
+                        <p><strong>Email</strong> <a href="mailto:Dewangurung34g@icloud.com">Dewangurung34g@icloud.com</a></p>
+                        <p><strong>Phone</strong> <a href="tel:+818090035855">+81 80-9003-5855</a></p>
+                        <p><strong>Location</strong> Tokyo, Japan</p>
 
                         <div class="socials">
-                            <p>Connect with me on : <br></p>
+                            <p>Elsewhere</p>
                             <ul>
-                                <li><a href="https://github.com/nawedGrg"><img src="images/social.png" alt=""></a></li>
-                                <li><a href="https://x.com/dewangurung_"><img src="images/twitter.png" alt=""></a></li>
-                                <li><a href="https://www.instagram.com/dewan_gurungg/?hl=en"><img src="images/social (1).png  " alt=""></a></li>
+                                <li>
+                                    <a href="https://github.com/nawedGrg" target="_blank" rel="noopener noreferrer">
+                                        <img src="images/social.png" alt="GitHub">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://x.com/dewangurung_" target="_blank" rel="noopener noreferrer">
+                                        <img src="images/twitter.png" alt="X">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/dewan_gurungg/" target="_blank" rel="noopener noreferrer">
+                                        <img src="images/social (1).png" alt="Instagram">
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                    
 
                     <form id="contact-form" action="https://formspree.io/f/xpwrzpvw" method="POST">
+                        <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" autocomplete="name" required>
                         </div>
 
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" autocomplete="email" required>
                         </div>
 
                         <div class="form-group">
@@ -66,15 +88,20 @@
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
 
-                        <button type="submit" id="submit-btn">Send Message</button>
-                        <p id="form-status" class="hidden"></p>
+                        <button type="submit" id="submit-btn" class="button-primary">Send message</button>
+                        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
                     </form>
                 </div>
             </div>
         </main>
 
         <footer>
-            <p id="copyright">&copy; 2026 Dewan Gurung All rights reserved.</p>
+            <div class="footer-links">
+                <a href="mailto:Dewangurung34g@icloud.com">Email</a>
+                <a href="https://github.com/nawedGrg" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://x.com/dewangurung_" target="_blank" rel="noopener noreferrer">X</a>
+            </div>
+            <p id="copyright">&copy; <span data-year>2026</span> Dewan Gurung. All rights reserved.</p>
         </footer>
     </div>
 

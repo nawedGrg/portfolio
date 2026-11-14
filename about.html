@@ -4,90 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Dewan Gurung</title>
+    <meta name="description" content="About Dewan Gurung: Digital Engineering Support in Tokyo, with a background in programming, DX, and building practical software.">
+    <meta name="author" content="Dewan Gurung">
+    <meta property="og:title" content="About | Dewan Gurung">
+    <meta property="og:description" content="Engineer in Tokyo working on DX, automation, and software.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/Memoji.jpg">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
     <div class="container">
         <header class="navigation">
-            <h1>NAWED</h1>
+            <a class="logo" href="index.html">NAWED</a>
             <nav>
-                <button id="mobile-menu-toggle" aria-label="Toggle menu">
+                <button id="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </button>
                 <ul id="nav-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="about.html" class="active" aria-current="page">About</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
-        <main>
+        <main id="main-content">
             <div class="about-page">
-                <h1 class="section-title">About me</h1>
-
-                <h4 class="quote">
-                    "Just a 24-year-old guy into tech—came to Japan, enrolled in a programming course, and started chasing his dreams."
-                </h4>
+                <h1 class="section-title">About</h1>
+                <p class="quote">I came to Japan to study programming and now support digital transformation work while building software on the side.</p>
 
                 <div class="sections">
                     <section class="section">
-                        <h2>
-                            <img src="images/project-management.png" alt="" class="icon">
-                            Current Progress
-                        </h2>
-                        <p>I'm currently building my <strong>personal portfolio website</strong> to showcase:</p>
+                        <h2>What I do now</h2>
+                        <p>I work as <strong>Digital Engineering Support</strong> in Tokyo, focused on:</p>
                         <ul>
-                            <li>learning from <strong> E-Learning platform</strong></li>
-                            <li><strong>Hands-on projects</strong> from college</li>
-                            <li>A clear path of my <strong>career journey and growth in upcoming days</strong></li>
+                            <li>System integration and day-to-day IT tooling</li>
+                            <li>Cloud and data management workflows</li>
+                            <li>Automation and practical uses of AI</li>
                         </ul>
-                        <p>This site will also serve as a central hub for potential collaborators, recruiters, and future friends to learn more about me.</p>
+                        <p>I care about tools that make operations clearer and faster, not technology for its own sake.</p>
                     </section>
 
                     <section class="section">
-                        <h2>
-                            <img src="images/fire.png" alt="" class="icon">
-                            Tech I Love
-                        </h2>
-                        <p>I'm committed to learning and growing both <strong>personally and professionally</strong>.</p>
+                        <h2>Stack</h2>
                         <ul>
-                            <li><strong>Currently Learning:</strong> Java, JavaScript (JS), PHP, MySQL, HTML, and CSS.</li>
-                            <li><strong>Goals for Mastery:</strong> I want to master my current languages, especially Java and JavaScript.</li>
-                            <li><strong>Future Learning Plans:</strong> I'm aiming to learn React, Node.js and explore other programming languages and framework.</li>
-                        </ul>
-                        <p>I'm eager to gain experience and continue <strong>developing my skills</strong>.</p>
-                    </section>
-
-                    <section class="section">
-                        <h2>
-                            <img src="images/mushroom.png" alt="" class="icon">
-                            When I'm Not Coding/learning...
-                        </h2>
-                        <p>I enjoy:</p>
-                        <ul>
-                            <li>Playing video games to relax and recharge</li>
-                            <li>Listening music and vibe the rhythm and lyrics</li>
-                            <li>Exploring new technologies and keeping up with industry trends</li>
+                            <li><strong>Working with:</strong> Java, JavaScript, PHP, MySQL, HTML, CSS</li>
+                            <li><strong>Deepening:</strong> Java and JavaScript for full-stack work</li>
+                            <li><strong>Next:</strong> React, Node.js, and stronger production practices</li>
                         </ul>
                     </section>
 
                     <section class="section">
-                        <h2>
-                            <img src="images/future.png" alt="" class="icon">
-                            Future Plans
-                        </h2>
+                        <h2>Outside work</h2>
                         <ul>
-                            <li>Build a strong portfolio with real-world projects</li>
-                            <li>Contribute to open-source projects</li>
-                            <li>Land a full-time role as a <strong>full-stack developer</strong></li>
-                            <li>Continue lifelong learning in both frontend and backend technologies</li>
+                            <li>Games to reset after long days</li>
+                            <li>Music</li>
+                            <li>Following new tools and industry trends</li>
+                        </ul>
+                    </section>
+
+                    <section class="section">
+                        <h2>Direction</h2>
+                        <ul>
+                            <li>More hands-on DX and system integration experience</li>
+                            <li>Ship real projects that solve a specific operational problem</li>
+                            <li>Grow into a stronger software engineer in Japan</li>
                         </ul>
                     </section>
                 </div>
@@ -95,12 +85,15 @@
         </main>
 
         <footer>
-            <p id="copyright">&copy; 2026 Dewan Gurung All rights reserved.</p>
+            <div class="footer-links">
+                <a href="mailto:Dewangurung34g@icloud.com">Email</a>
+                <a href="https://github.com/nawedGrg" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://x.com/dewangurung_" target="_blank" rel="noopener noreferrer">X</a>
+            </div>
+            <p id="copyright">&copy; <span data-year>2026</span> Dewan Gurung. All rights reserved.</p>
         </footer>
     </div>
 
     <script src="js/main.js"></script>
-
-    </script>
 </body>
 </html>
