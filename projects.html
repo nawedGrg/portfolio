@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Dewan Gurung</title>
+    <meta name="description" content="Selected projects by Dewan Gurung: restaurant ordering, a code-learning quiz, and a developer portfolio.">
+    <meta name="author" content="Dewan Gurung">
+    <meta property="og:title" content="Projects | Dewan Gurung">
+    <meta property="og:description" content="Selected software projects: ordering app, CodeQuest, and portfolio work.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/Memoji.jpg">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
     <div class="container">
         <header class="navigation">
-            <h1>NAWED</h1>
+            <a class="logo" href="index.html">NAWED</a>
             <nav>
-                <button id="mobile-menu-toggle" aria-label="Toggle menu">
+                <button id="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -22,62 +31,69 @@
                 <ul id="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
-        <main>
+        <main id="main-content">
             <div class="projects-page">
                 <h1 class="section-title">Projects</h1>
-                <p class="projects-subtitle">A selection of things I've been building recently.</p>
+                <p class="projects-subtitle">A few builds that show how I think about product, UI, and implementation.</p>
 
                 <div class="projects-container">
                     <article class="project-card">
-                        <h2 class="project-title">AI Portfolio Website</h2>
+                        <p class="project-meta">~3 months</p>
+                        <h2 class="project-title">Restaurant Ordering App</h2>
                         <p class="project-description">
-                            A futuristic personal developer portfolio showcasing my skills, projects, and modern UI design. Built with responsive layouts and interactive components.
+                            QR-based ordering for restaurants: guests browse the menu and place orders; kitchen and admin staff manage tickets and update items in real time. Includes basic sales analytics for owners.
                         </p>
-                        <p class="project-tech">
-                            <span>Technologies:</span> React, Tailwind CSS, Modern UI Design
-                        </p>
+                        <ul class="tech-tags">
+                            <li>Web app</li>
+                            <li>Realtime orders</li>
+                            <li>Lovable</li>
+                        </ul>
                         <div class="project-footer">
                             <div class="project-links">
-                                <a href="https://v0-futuristic-developer-website.vercel.app" target="_blank" rel="noopener" class="project-button">View Project</a>
-                                <a href="https://github.com/nawedGrg/v0-futuristic-developer-website" target="_blank" rel="noopener" class="project-link">GitHub</a>
+                                <a href="https://order-menu.lovable.app" target="_blank" rel="noopener noreferrer" class="button-primary">Live demo</a>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card">
-                        <h2 class="project-title">CodeQuest – Code Learning Quiz Game</h2>
+                        <h2 class="project-title">CodeQuest</h2>
                         <p class="project-description">
-                            A programming quiz platform designed to help beginners practice coding concepts through interactive quizzes and score tracking.
+                            A quiz platform for beginners to practice programming concepts, track scores, and keep learning in short sessions.
                         </p>
-                        <p class="project-tech">
-                            <span>Technologies:</span> HTML, CSS, JavaScript, PHP, MySQL
-                        </p>
+                        <ul class="tech-tags">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                        </ul>
                         <div class="project-footer">
-                            <p class="project-meta">Live Demo: <span class="meta-unavailable">Not available</span></p>
+                            <p class="project-meta">Live demo not hosted yet</p>
                             <div class="project-links">
-                                <a href="https://github.com/nawedGrg/CodeQuest---Code-Learning-Quiz-Game/tree/main/codequest" target="_blank" rel="noopener" class="project-button">View Project</a>
+                                <a href="https://github.com/nawedGrg/CodeQuest---Code-Learning-Quiz-Game/tree/main/codequest" target="_blank" rel="noopener noreferrer" class="button-primary">View source</a>
                             </div>
                         </div>
                     </article>
 
                     <article class="project-card">
-                        <h2 class="project-title">Odering App</h2>
+                        <h2 class="project-title">Futuristic Developer Site</h2>
                         <p class="project-description">
-                            Its a odering web app for restaurant. It allows customers to browse the menu, place orders through the QR code. Admin and kitchen staff can manage orders and update the menu in real-time. It also provides analytics for restaurant owners to track sales and customer preferences.
+                            An experimental personal site focused on motion, layout, and a more cinematic developer aesthetic.
                         </p>
-                        <p class="project-tech">
-                            <span>Peroid:</span> 3months + <br>
-                            <span>Technologies:</span> Lovable AI
-                        </p>
+                        <ul class="tech-tags">
+                            <li>React</li>
+                            <li>Tailwind CSS</li>
+                        </ul>
                         <div class="project-footer">
                             <div class="project-links">
-                                <a href="order-menu.lovable.app" target="_blank" rel="noopener" class="project-button">View Project</a>
+                                <a href="https://v0-futuristic-developer-website.vercel.app" target="_blank" rel="noopener noreferrer" class="button-primary">Live demo</a>
+                                <a href="https://github.com/nawedGrg/v0-futuristic-developer-website" target="_blank" rel="noopener noreferrer" class="button-secondary">GitHub</a>
                             </div>
                         </div>
                     </article>
@@ -86,7 +102,12 @@
         </main>
 
         <footer>
-            <p id="copyright">&copy; 2026 Dewan Gurung All rights reserved.</p>
+            <div class="footer-links">
+                <a href="mailto:Dewangurung34g@icloud.com">Email</a>
+                <a href="https://github.com/nawedGrg" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://x.com/dewangurung_" target="_blank" rel="noopener noreferrer">X</a>
+            </div>
+            <p id="copyright">&copy; <span data-year>2026</span> Dewan Gurung. All rights reserved.</p>
         </footer>
     </div>
 
